@@ -1,6 +1,6 @@
 const fs = global.nodemodule["fs-extra"];
 module.exports.config = {
-  name: "bot",
+  name: "mim",
   version: "0.0.4",
   permission: 0,
   prefix: false,
