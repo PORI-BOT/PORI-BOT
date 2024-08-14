@@ -13,14 +13,6 @@ module.exports = {
     cooldowns: 5,
   },
 
-module.exports.handleEvent = async function({ api, event, args, Threads, Users }) {
-  var { threadID, messageID, reason } = event;
-  const moment = require("moment-timezone");
-  const time = moment.tz("Asia/Manila").format("HH:MM:ss L");
-  var idgr = `${event.threadID}`;
-  var id = event.senderID;
-  var name = await Users.getNameUser(event.senderID);
-
   var tl = ["এতক্ষণ বট বট করে এখন নাম ধরে ডাকস 🔪😒"] 
     var rand = tl[Math.floor(Math.random() * tl.length)]
 
