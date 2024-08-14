@@ -1,16 +1,15 @@
 const fs = global.nodemodule["fs-extra"];
-module.exports = {
-  config: {
-    name: "Jan",
-    version: "1.0.0",
-    permission: 0,
-    credits: "nayan",
-    description: "...",
-    prefix: 'awto',
-    category: "talk",
-    usages: "hi",
-    cooldowns: 5,
-  },
+module.exports.config = {
+  name: "bot",
+  version: "0.0.4",
+  permission: 0,
+  prefix: false,
+  credits: "Nayan",
+  description: "talk with bot",
+  category: "user",
+  usages: "",
+  cooldowns: 5,
+};
 module.exports.handleEvent = async function({ api, event, args, Threads, Users }) {
   var { threadID, messageID, reason } = event;
   const moment = require("moment-timezone");
