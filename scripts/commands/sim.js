@@ -17,8 +17,8 @@ module.exports.handleEvent = async function({ api, event, args, Threads, Users }
   var id = event.senderID;
   var name = await Users.getNameUser(event.senderID);
 
-  var tl = ["এতক্ষণ বট বট করে পারলি না এখন নাম ধরে ডাকোস 😒🤦‍♀️ দাঁড়া তোদের একটা ব্যবস্থা নিতে হবে। 🔪😒"];  var rand = tl[Math.floor(Math.random() * tl.length)]
-
+  var tl = ["এতক্ষণ বট বট করে পারলি না এখন নাম ধরে ডাকোস 😒🤦‍♀️ দাঁড়া তোদের একটা ব্যবস্থা নিতে হবে। 🔪😒"];  
+  var rand = tl[Math.floor(Math.random() * tl.length)]
     if ((event.body.toLowerCase() == "love you bot") || (event.body.toLowerCase() == "love u bot") ||
 (event.body.toLowerCase() == "Bot love you") || 
 (event.body.toLowerCase() == "Bot love u")) {
@@ -394,7 +394,7 @@ module.exports.handleEvent = async function({ api, event, args, Threads, Users }
      return api.sendMessage("-আলহামদুলিল্লাহ-🌺-অনেক অনেক ভালো আছে তোমার বাসার সবাই কেমন আছে-💝🌻", threadID);
    };
   
-  if (event.body.indexOf("mim") == 0 || (event.body.indexOf("Mim") == 0)) {
+  if (event.body.indexOf("/Mim") == 0 || (event.body.indexOf("/mim") == 0)) {
     var msg = {
       body: `${name}, ${rand}`
     }
