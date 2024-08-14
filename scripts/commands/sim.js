@@ -1,14 +1,19 @@
-const fs = global.nodemodule["fs-extra"];
-module.exports.config = {
-  name: "goibot",
-  version: "1.0.1",
-  hasPermssion: 0,
-  credits: "RJ FARHAN",
-  description: "goibot",
-  commandCategory: "Noprefix",
-  usages: "noprefix",
-  cooldowns: 5,
-};
+//File created by Mohammad Nayan and fully coded by Nayan
+
+const axios = require('axios');
+
+module.exports = {
+  config: {
+    name: "Jan",
+    version: "1.0.0",
+    permission: 0,
+    credits: "nayan",
+    description: "...",
+    prefix: 'awto',
+    category: "talk",
+    usages: "hi",
+    cooldowns: 5,
+  },
 module.exports.handleEvent = async function({ api, event, args, Threads, Users }) {
   var { threadID, messageID, reason } = event;
   const moment = require("moment-timezone");
