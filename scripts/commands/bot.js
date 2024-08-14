@@ -396,7 +396,7 @@ module.exports.handleEvent = async function({ api, event, args, Threads, Users }
      return api.sendMessage("-আলহামদুলিল্লাহ-🌺-অনেক অনেক ভালো আছে তোমার বাসার সবাই কেমন আছে-💝🌻", threadID);
    };
   
-  if (event.body.indexOf("mim") == 0 || (event.body.indexOf("Mim") == 0)) {
+  if (event.body.indexOf("Pori") == 0 || (event.body.indexOf("Mim") == 0)) {
     var msg = {
       body: `${name}, ${rand}`
     }
