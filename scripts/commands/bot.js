@@ -1,7 +1,7 @@
 const fs = global.nodemodule["fs-extra"];
 module.exports.config = {
   name: "mim",
-  version: "0.0.4",
+  version: "0.0.3",
   permission: 0,
   prefix: false,
   credits: "Nayan",
