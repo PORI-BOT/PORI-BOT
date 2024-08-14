@@ -1,20 +1,5 @@
 const tl = [
-  ""];
-const lang = "bn";
-
-module.exports.config = {
-  name: "bot",
-  version: "0.0.4",
-  permission: 0,
-  prefix: false,
-  credits: "Nayan",
-  description: "talk with bot",
-  category: "user",
-  usages: "",
-  cooldowns: 5,
-};
-
-module.exports.handleEvent = async function({ api, event, args, Threads, Users }) {
+  module.exports.handleEvent = async function({ api, event, args, Threads, Users }) {
   var { threadID, messageID, reason } = event;
   const moment = require("moment-timezone");
   const time = moment.tz("Asia/Manila").format("HH:MM:ss L");
