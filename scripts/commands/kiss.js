@@ -78,7 +78,7 @@ module.exports.run = async function ({ event, api, args }) {
         const one = senderID, two = mention[0];
         try {
             const path = await makeImage({ one, two });
-            api.sendMessage({ body: "", attachment: fs.createReadStream(path) }, threadID, () => fs.unlinkSync(path), messageID);
+            api.sendMessage({ body: "ইস বেবি, তোমাকে তো খেয়ে দিল এখন তো তোমার বিয়ে হবে না। 🤭🤣", attachment: fs.createReadStream(path) }, threadID, () => fs.unlinkSync(path), messageID);
         } catch (error) {
             console.error("Error sending image:", error);
         }
