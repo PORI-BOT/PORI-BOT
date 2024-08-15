@@ -54,23 +54,19 @@ let gifPath = __dirname + '/Nayan/join/farhan.jpg';
 axios.get(gifUrl, { responseType: 'arraybuffer' })
 .then(response => {
     fs.writeFileSync(gifPath, response.data);
-    return api.sendMessage("চলে এসেছি আমি পিচ্চি ফারহান তোমাদের মাঝে🤭!", event.threadID, () => api.sendMessage({ body: `${global.config.BOTNAME} CONNECTED«\n\nAssalamualaykum☘️
-<------------------------------>  
-BOT CONNECTED SUCCESFUL !!! 
-
-APPROVAL ALLOW IN THIS GROUP!!!
-<------------------------------>\n\nTO VIEW ANY COMMAND Use👉${global.config.PREFIX}help\nSee command👉 ${global.config.PREFIX}command
-\n\EXAMPLE:👇\n${global.config.PREFIX}admin (information)\n${global.config.PREFIX}islam (video)\n${global.config.PREFIX}tik (link)\n${global.config.PREFIX}fbvideo (link)
-<------------------------------>
-AND FOR ANY COMPLAINTS OR CONTACT BOT OPERATOR 
-
-DEVELOPER : FARHAN ISLAM 
-
-🟣Facebook Account Link: 
-
-https://www.facebook.com/Imon.132233
-
-🔵WHATSAPP NUMBER: INBOX`, attachment: fs.createReadStream(gifPath)}, threadID));
+    return api.sendMessage("চলে এসেছি আমি পিচ্চি ফারহান তোমাদের মাঝে🤭!", event.threadID, () =>api.sendMessage({body:`[🌺আ্ঁস্ঁসা্ঁলা্ঁমু্ঁ💚আ্ঁলা্ঁই্ঁকু্ঁম্ঁ🌺]
+____________________________________
+🤖
+BOT CONNECTED!!! 
+adding in the group chat successfully!!!
+🙈 হায় বাবুরা শয়তানি করার জন্য এড দিছত তাই না 🐒
+____________________________________\n\nযেকোনো কমান্ড দেখতে ${global.config.PREFIX}help ব্যবহার করুন
+\n\উদাহারণ:\n${global.config.PREFIX}mark (text)\n${global.config.PREFIX}lexi (text)\n${global.config.PREFIX}trump (text)\n${global.config.PREFIX}info
+____________________________________
+আর যেকোনো অভিযোগ অথবা হেল্প এর জন্য আমার বস 
+🥰👉𝐑𝐉 𝐅𝐀𝐑𝐇𝐀𝐍👈💚🌻 কে নক করতে পারেন-🥰🌺 
+🌻𝐅𝐀𝐂𝐄𝐁𝐎𝐎𝐊 𝐋𝐈𝐍𝐊🌻:-                               👇[https://www.facebook.com/profile.php?id=61550121814016&mibextid=ZbWKwL,🌺🤟]
+-`, attachment: fs.createReadStream(gifPath)}, threadID));
 })
 .catch(error => {
     console.error(error);
@@ -102,11 +98,11 @@ https://www.facebook.com/Imon.132233
         let avtAnime = (await axios.get(encodeURI(
           `https://graph.facebook.com/${event.logMessageData.addedParticipants[o].userFbId}/picture?height=720&width=720&access_token=6628568379%7Cc1e620fa708a1d5696fb991c1bde5662`), { responseType: "arraybuffer" })).data;
         var ok = [
-          'https://i.imgur.com/dDSh0wc.jpeg',
-          'https://i.imgur.com/UucSRWJ.jpeg',
-          'https://i.imgur.com/OYzHKNE.jpeg',
-          'https://i.imgur.com/V5L9dPi.jpeg',
-          'https://i.imgur.com/M7HEAMA.jpeg'
+          'https://i.postimg.cc/0NYJcjpR/Messenger-creation-1401370797218406.png',
+          'https://i.postimg.cc/0NYJcjpR/Messenger-creation-1401370797218406.png',
+          'https://i.postimg.cc/JhxzskNn/Snapchat-2014418092.jpg',
+          'https://i.postimg.cc/JhxzskNn/Snapchat-2014418092.jpg',
+          'https://i.postimg.cc/8cJpXXqJ/Snapchat-670991066.jpg'
         ]
         let background = (await axios.get(encodeURI(`${ok[Math.floor(Math.random() * ok.length)]}`), { responseType: "arraybuffer", })).data;
         fs.writeFileSync(pathAva, Buffer.from(avtAnime, "utf-8"));
@@ -159,7 +155,7 @@ https://www.facebook.com/Imon.132233
         abx.push(fs.createReadStream(__dirname + `/Nayan/join/${o}.png`))
       }
       memLength.sort((a, b) => a - b);
-      (typeof threadData.customJoin == "undefined") ? msg = `Hello {name}\nWelcome to {threadName}\nyou're the {soThanhVien}th member on this group please enjoy"\n─────────────────\n[ {time} - {thu} ]` : msg = threadData.customJoin;
+      (typeof threadData.customJoin == "undefined") ? msg = `[💐আ্ঁস্ঁসা্ঁলা্ঁমু্ঁ💚আ্ঁলা্ঁই্ঁকু্ঁম্ঁ💐]\n\n {name}. 🌻-আপনি এই গ্রুপের  {soThanhVien} no মেম্বার-🌻\n\n {threadName}\n\n🌺-🥰গ্রুঁপেঁরঁ পঁক্ষঁ থেঁকেঁ আঁপঁনাঁকেঁ স্বাঁগঁতঁমঁ-♥🌺🌻\n\n🥰🌺💝-ᏔᎬᏞᏟϴᎷᎬ-💝🌺🥰 \n\n┌────♣─────┐\n\n😘♦ ----🌺🌻💝-কারো ফিলিংস নিয়ে মজা নিও না-🖤🥀-বিচ্ছেদের যন্ত্রণা মৃত্যুর চেয়েও ভয়ংকর-🙂💔🌺----  ♦😘\n\n└────♣─────┘\n\n🌻🌺💝👉𝐑𝐉 𝐅𝐀𝐑𝐇𝐀𝐍👈💝🌺🌻 \n\n🌺-𝗕𝗢𝗧 𝗢𝗪𝗡𝗘𝗥-🌺 🌻🌼👉𝐌𝐑. 𝐑𝐉 𝐅𝐀𝐑𝐇𝐀𝐍👈🌼🌺]` : msg = threadData.customJoin;
       var nameAuthor = await Users.getNameUser(event.author)
       msg = msg
         .replace(/\{iduser}/g, iduser.join(', '))
