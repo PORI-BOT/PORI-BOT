@@ -20,50 +20,71 @@ const axios = global.nodemodule["axios"];
 const request = global.nodemodule["request"];
 const fs = global.nodemodule["fs-extra"];
 const time = process.uptime(),
-    hours = Math.floor(time / (60 * 60)),
-    minutes = Math.floor((time % (60 * 60)) / 60),
-    seconds = Math.floor(time % 60);
+		hours = Math.floor(time / (60 * 60)),
+		minutes = Math.floor((time % (60 * 60)) / 60),
+		seconds = Math.floor(time % 60);
 const moment = require("moment-timezone");
-var juswa = moment.tz("Asia/Manila").format("『D/MM/YYYY』 【hh:mm:ss】");
-var link = ["https://i.postimg.cc/yd8TtCQx/received-825512762409044.jpg", 
+var juswa = moment.tz("Asia/Dhaka").format("『D/MM/YYYY』 【hh:mm:ss】");
+var link = ["https://i.postimg.cc/0NYJcjpR/Messenger-creation-1401370797218406.png", 
+            
+            "https://i.postimg.cc/JhxzskNn/Snapchat-2014418092.jpg", 
+            
+            "https://i.postimg.cc/0NYJcjpR/Messenger-creation-1401370797218406.png",
 
-            "https://i.postimg.cc/CMWQBdr4/received-844582530583225.jpg", 
+"https://i.postimg.cc/8cJpXXqJ/Snapchat-670991066.jpg",
+            
+            "https://i.postimg.cc/KvRXLsTB/FB-IMG-1709702111184.jpg"];
+  
+var callback = () => api.sendMessage({body:`🌺🍒🐰❀𝐀𝐃𝐌𝐈𝐍 𝐀𝐍𝐃 𝐁𝐎𝐓 𝐈𝐍𝐅𝐎𝐑𝐌𝐀𝐓𝐈𝐎𝐍💝🐰🍒 
 
-            "https://i.postimg.cc/cJ2Q9tn9/received-943134260313225.jpg",
+╔════•|      ✿      |•════╗
+💐আ্ঁস্ঁসা্ঁলা্ঁমু্ঁ💚আ্ঁলা্ঁই্ঁকু্ঁম্ঁ💐
+╚════•|      ✿      |•════╝
 
-"https://i.postimg.cc/zXzRkFQD/received-1513370482734848.jpg",
-
-            "https://i.postimg.cc/zB24Pjjm/IMG-8481.jpg"];
-
-var callback = () => api.sendMessage({body:`𝙸𝙽𝙵𝙾 𝙰𝙽𝙳 𝙱𝙾𝚃 𝙸𝙽𝙵𝙾𝚁𝙼𝙰𝚃𝙸𝙾𝙽
 ________________________________________
 
-❇️𝙱𝙾𝚃 𝙽𝙰𝙼𝙴 : ${global.config.BOTNAME}
+💠𝐁𝐎𝐓 𝐍𝐀𝐌𝐄💠 : ${global.config.BOTNAME}
 
-❇️𝙱𝙾𝚃 𝙰𝙳𝙼𝙸𝙽 :『 𝙵𝙰𝚁𝙷𝙰𝙽-𝙸𝚂𝙻𝙰𝙼 』
+🌼𝐁𝐎𝐓 𝐀𝐃𝐌𝐈𝐍🌼 : 『😽👉  𝐑𝐉 𝐅𝐀𝐑𝐇𝐀𝐍 👈😽』
 
-❇️𝙰𝙳𝙳𝚁𝙴𝚂𝚂 : 𝙱𝙰𝚁𝙸𝚂𝙷𝙰𝙻
+🔥𝐁𝐈𝐎 𝐀𝐃𝐌𝐈𝐍🔥 : [ ⊱༅༎😽💚༅༎⊱
 
-_____________𝙲𝙾𝙽𝚃𝙰𝙲𝚃_____________
 
-❇️𝙵𝙰𝙲𝙴𝙱𝙾𝙾𝙺 𝙸𝙳 : https://www.facebook.com/profile.php?id=100089974857944
+-আমি ভদ্র, বেয়াদব দুটোই🥱✌️
 
-❇️𝙵𝙰𝙲𝙴𝙱𝙾𝙾𝚔 𝙿𝙰𝙶𝙴: https://www.facebook.com/FarhanIslamImon.official?mibextid=ZbWKwL
+-তুমি যেটা ডি'জার্ভ করো, আমি সেটাই দেখাবো!🙂
 
-❇️𝙱𝙾𝚃 𝙿𝚁𝙴𝙵𝙸𝚇 : ${global.config.PREFIX}
 
-❇️𝙱𝙾𝚃 𝙾𝚆𝙽𝙴𝚁 :  𝙵𝙰𝚁𝙷𝙰𝙽_𝙸𝚂𝙻𝙰𝙼
+⊱༅༎😽💚༅༎⊱ ]
 
-𝙾𝚃𝙷𝙴𝚁 𝙸𝙽𝙵𝙾𝙼𝙰𝚃𝙸𝙾𝙽____________________
+🏠𝐀𝐃𝐃𝐑𝐄𝐒𝐒🏠 : যশোর, বাংলাদেশ
 
-𝚃𝚈𝙿𝙴 /𝚊𝚍𝚖𝚒𝚗
+_____________🅲🅾🅽🆃🅰🅲🆃_____________
 
-➟ 𝚄𝙿𝚃𝙸𝙼𝙴
+💥𝐅𝐀𝐂𝐄𝐁𝐎𝐎𝐊 𝐈𝐃 (❶)💥 : https://www.facebook.com/profile.php?id=100090087850647&mibextid=ZbWKwL
 
-𝚃𝙾𝙳𝙰𝚈 𝙸𝚂 𝚃𝙸𝙼𝙴 : ${juswa} 
+💥𝐅𝐀𝐂𝐄𝐁𝐎𝐎𝐊 𝐈𝐃 (❷)💥 : https://www.facebook.com/profile.php?id=61550121814016&mibextid=eBUYbo
 
-𝙱𝙾𝚃 𝙸𝚂 𝚁𝚄𝙽𝙽𝙸𝙽𝙶 ${hours}:${minutes}:${seconds}.
+✴️𝐁𝐎𝐓 𝐏𝐑𝐄𝐅𝐈𝐗✴️ : ${global.config.PREFIX}
 
-𝚃𝙷𝙰𝙽𝙺𝚂 𝙵𝙾𝚁 𝚄𝚂𝙸𝙽𝙶 ${global.config.BOTNAME} 『🤖🖤』`,attachment: fs.createReadStream(__dirname + "/cache/juswa.jpg")}, event.threadID, () => fs.unlinkSync(__dirname + "/cache/juswa.jpg")); 
+❇️𝐁𝐎𝐓 𝐎𝐖𝐍𝐄𝐑✳️ : {🌻𝐌𝐑.𝐁𝐎𝐒𝐒 𝐑𝐉 𝐅𝐀𝐑𝐇𝐀𝐍 
+𝐕𝐈𝐑𝐓𝐔𝐀𝐋 𝐓𝐎𝐏 𝐅𝐌𝐙 𝐊𝐈𝐍𝐆
+𝐘𝐎𝐔'𝐑 𝐍𝐄𝐗𝐓 𝐕𝐀𝐓𝐀𝐑 𝐗𝐀𝐍'𝐒
+𝐅𝐀𝐂𝐄𝐁𝐎𝐎𝐊 𝐌𝐀𝐒𝐓𝐄𝐑
+𝐁𝐀𝐍𝐆𝐋𝐀𝐃𝐄𝐒𝐇 𝐇𝐀𝐓𝐄𝐑𝐒
+𝐅𝐄𝐄𝐋 𝐓𝐇𝐄 𝐏𝐎𝐖𝐄𝐑 𝐎𝐅
+𝐘𝐎𝐔'𝐑 𝐎𝐅𝐅𝐈𝐂𝐈𝐀𝐋 𝐃𝐀𝐃🌻} 
+
+🌺𝐎𝐓𝐇𝐄𝐑 𝐍𝐅𝐎𝐑𝐌𝐀𝐓𝐈𝐎𝐍🌺____________________
+
+𝐓𝐘𝐏𝐄 /𝐀𝐃𝐌𝐈𝐍  
+
+♻️➟ 𝐔𝐏𝐓𝐈𝐌𝐄 ♻️
+
+🔰𝐓𝐎𝐃𝐀𝐘 𝐈𝐒 𝐓𝐈𝐌𝐄🔰 : ${juswa} 
+
+🐰🍒𝐁𝐎𝐓 𝐈𝐒 𝐑𝐔𝐍𝐍𝐈𝐍𝐆🍒🐰 ${hours}:${minutes}:${seconds}.
+
+💚🌺𝐓𝐇𝐀𝐍𝐊𝐒 𝐅𝐎𝐑 𝐔𝐒𝐈𝐍𝐆🌺💚 ${global.config.BOTNAME} 『😽🖤🌺』`,attachment: fs.createReadStream(__dirname + "/cache/juswa.jpg")}, event.threadID, () => fs.unlinkSync(__dirname + "/cache/juswa.jpg")); 
       return request(encodeURI(link[Math.floor(Math.random() * link.length)])).pipe(fs.createWriteStream(__dirname+"/cache/juswa.jpg")).on("close",() => callback());
-   }; 
+   };
