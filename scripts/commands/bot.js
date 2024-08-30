@@ -207,7 +207,7 @@ module.exports.handleEvent = async function({ api, event, args, Threads, Users }
      return api.sendMessage("সরি বস মাফ করে দেন আর এমন ভুল হবে না🥺🙏", threadID);
    };
 
-   if ((event.body.toLowerCase() == "Jannat") || (event.body.toLowerCase() == "jannat")) {
+   if ((event.body.toLowerCase() == "Mim") || (event.body.toLowerCase() == "mim")) {
      return api.sendMessage("বাড়িতে খাই ঝাটার বাড়ি, ফেসবুকে সে অ্যাটিটিউড নারী,😒🤣", threadID);
    };
 
@@ -319,7 +319,7 @@ module.exports.handleEvent = async function({ api, event, args, Threads, Users }
      return api.sendMessage("️বাই তো বললে সোজা অফলাইনে যাও অন্য কারো ইনবক্সে যেও না গেলে আমার বস্ _𝐑𝐉 𝐅𝐀𝐑𝐇𝐀𝐍 এর_ ইনবক্সে যাও", threadID);
    };
 
-   if ((event.body.toLowerCase() == "মাহি") || (event.body.toLowerCase() == "জান্নাত")) {
+   if ((event.body.toLowerCase() == "মাহি") || (event.body.toLowerCase() == "মিম")) {
      return api.sendMessage("️বাড়িতে খাই ঝাটার বাড়ি, ফেসবুকে সে অ্যাটিটিউড নারী,😒🤣", threadID);
    };
 
@@ -375,12 +375,14 @@ module.exports.handleEvent = async function({ api, event, args, Threads, Users }
      return api.sendMessage("আমার বস ফারহান কে চোখে দেখো না নাকি__😒🥱", threadID);
    };
 
-   if ((event.body.toLowerCase() == "bot goes to sleep") || (event.body.toLowerCase() == "bot goes to sleep")) {
-     return api.sendMessage("I'm a bot, you're the one who should go to sleep <3", threadID);
+   if ((event.body.toLowerCase() == "জান্নাত") || (event.body.toLowerCase() == "jannat")) {
+     return api.sendMessage("ইস তোদের নিয়ে আর পারলাম না, 🫵🏻😼এতক্ষণ বট বট করে, 😒😼
+এখন আবার জান্নাত ম্যাডাম কে ডাকস,🤦🏻পারলে জান্নাত ম্যাডাম কে একটা বিএফ খুঁজে দে, 🔪😼", threadID);
    };
 
-   if ((event.body.toLowerCase() == "has the bot eaten yet") || (event.body.toLowerCase() == "bot an comrade")) {
-     return api.sendMessage("I'm full when I see you eat <3", threadID);
+   if ((event.body.toLowerCase() == "Jannat") || (event.body.toLowerCase() == "JANNAT")) {
+     return api.sendMessage("ইস তোদের নিয়ে আর পারলাম না, 🫵🏻😼এতক্ষণ বট বট করে, 😒😼
+এখন আবার জান্নাত ম্যাডাম কে ডাকস,🤦🏻পারলে জান্নাত ম্যাডাম কে একটা বিএফ খুঁজে দে, 🔪😼", threadID);
    };
 
    if ((event.body.toLowerCase() == "does the bot love me") || (event.body.toLowerCase() == "does the bot love me")) {
